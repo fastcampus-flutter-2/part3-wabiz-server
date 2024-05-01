@@ -1,0 +1,30 @@
+// **************************************************************************
+// JsonSerializableGenerator
+// **************************************************************************
+
+_$RewardItemModelImpl _$$RewardItemModelImplFromJson(
+        Map<String, dynamic> json) =>
+    _$RewardItemModelImpl(
+      id: json['id'] as int?,
+      projectId: json['project_id'] as int?,
+      imageUrl: json['image_url'] as String?,
+      title: json['title'] as String?,
+      price: json['price'] as int?,
+      description: json['description'] as String?,
+      imageRaw: (json['image_raw'] as List<dynamic>?)
+              ?.map((e) => e as int)
+              .toList() ??
+          const [],
+    );
+
+Map<String, dynamic> _$$RewardItemModelImplToJson(
+        _$RewardItemModelImpl instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'project_id': instance.projectId,
+      'image_url': instance.imageUrl,
+      'title': instance.title,
+      'price': instance.price,
+      'description': instance.description,
+      'image_raw': instance.imageRaw,
+    };
