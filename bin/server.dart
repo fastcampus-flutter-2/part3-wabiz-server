@@ -83,7 +83,11 @@ void main(List<String> args) async {
       );
 
   // final port = int.parse(Platform.environment['PORT'] ?? '3000');
-  final port = int.parse('8080');
+  String portNum = "8080";
+  if(!Platform.isLinux){
+    portNum = "3000";
+  }
+  final port = int.parse(portNum);
   final server = await serve(handler, ip, port);
   log.info('Server listening on port ${server.port}');
 }
