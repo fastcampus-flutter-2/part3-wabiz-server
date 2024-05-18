@@ -27,6 +27,35 @@ class ProjectService {
     return result;
   }
 
+  Future<List<ProjectItemModel>> getProjectByProjectId(
+      String? projectId) async {
+    final ResultSet resultSet = db.select("""
+          SELECT
+            project.*,
+            COUNT(waitlist.user_id) AS waitlist_count,
+            SUM(fund.user_id) AS total_funded_count,
+            SUM(fund.price) AS total_funded,
+        
+            categories.category,
+            project_type.type,
+            project_image.image
+          FROM project
+          LEFT JOIN waitlist ON project.id = waitlist.project_id
+          LEFT JOIN fund ON project.id = fund.project_id
+          LEFT JOIN categories ON project.category_id = categories.id
+          LEFT JOIN project_type ON project.project_type_id = project_type.id
+          LEFT JOIN project_image ON project.id = project_image.project_id
+          WHERE project.id == $projectId;
+           GROUP BY project.id
+          """);
+    List<ProjectItemModel> result = [];
+    for (final Row row in resultSet) {
+      print(row.toString());
+      result.add(ProjectItemModel.fromJson(row));
+    }
+    return result;
+  }
+
   /// 사용자 아이디 기반 프로젝트 가져오기
   Future<List<ProjectItemModel>> getProjectByUserId(String? userId) async {
     final ResultSet resultSet = db.select("""

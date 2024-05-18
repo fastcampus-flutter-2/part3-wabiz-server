@@ -102,11 +102,19 @@ class ProjectRouter {
     );
   }
 
+  Future<Response> _getProjectByProjectId(Request request) async {
+    final projectId = request.params['id'];
+
+    final result = await projectService.getProjectByProjectId(projectId ?? "");
+    return Response.ok(jsonEncode(ProjectDto(data: result).toJson()));
+  }
+
   /// 프로젝트 이미지 등록하기
 
   Handler get router {
     final router = Router();
     router.get("/project/type", _getProjectType);
+    router.get("/project/<id>", _getProjectByProjectId);
     router.post("/project", _createProject);
     router.put("/project/<id>", _updateProjectOpenState);
     router.delete("/project/<id>", _deleteProject);

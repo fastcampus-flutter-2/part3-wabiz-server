@@ -9,14 +9,14 @@ part of 'reward_model.dart';
 _$RewardItemModelImpl _$$RewardItemModelImplFromJson(
         Map<String, dynamic> json) =>
     _$RewardItemModelImpl(
-      id: json['id'] as int?,
-      projectId: json['project_id'] as int?,
+      id: (json['id'] as num?)?.toInt(),
+      projectId: (json['project_id'] as num?)?.toInt(),
       imageUrl: json['image_url'] as String?,
       title: json['title'] as String?,
-      price: json['price'] as int?,
+      price: (json['price'] as num?)?.toInt(),
       description: json['description'] as String?,
       imageRaw: (json['image_raw'] as List<dynamic>?)
-              ?.map((e) => e as int)
+              ?.map((e) => (e as num).toInt())
               .toList() ??
           const [],
     );

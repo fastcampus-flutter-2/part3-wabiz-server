@@ -32,6 +32,9 @@ mixin _$ProjectItemModel {
   String? get count => throw _privateConstructorUsedError;
   String? get deadline => throw _privateConstructorUsedError;
   String? get description => throw _privateConstructorUsedError;
+  int? get waitlistCount => throw _privateConstructorUsedError;
+  int? get totalFundedCount => throw _privateConstructorUsedError;
+  int? get totalFunded => throw _privateConstructorUsedError;
   String? get isOpen => throw _privateConstructorUsedError;
   String? get category => throw _privateConstructorUsedError;
   String? get type => throw _privateConstructorUsedError;
@@ -62,6 +65,9 @@ abstract class $ProjectItemModelCopyWith<$Res> {
       String? count,
       String? deadline,
       String? description,
+      int? waitlistCount,
+      int? totalFundedCount,
+      int? totalFunded,
       String? isOpen,
       String? category,
       String? type,
@@ -93,6 +99,9 @@ class _$ProjectItemModelCopyWithImpl<$Res, $Val extends ProjectItemModel>
     Object? count = freezed,
     Object? deadline = freezed,
     Object? description = freezed,
+    Object? waitlistCount = freezed,
+    Object? totalFundedCount = freezed,
+    Object? totalFunded = freezed,
     Object? isOpen = freezed,
     Object? category = freezed,
     Object? type = freezed,
@@ -147,6 +156,18 @@ class _$ProjectItemModelCopyWithImpl<$Res, $Val extends ProjectItemModel>
           ? _value.description
           : description // ignore: cast_nullable_to_non_nullable
               as String?,
+      waitlistCount: freezed == waitlistCount
+          ? _value.waitlistCount
+          : waitlistCount // ignore: cast_nullable_to_non_nullable
+              as int?,
+      totalFundedCount: freezed == totalFundedCount
+          ? _value.totalFundedCount
+          : totalFundedCount // ignore: cast_nullable_to_non_nullable
+              as int?,
+      totalFunded: freezed == totalFunded
+          ? _value.totalFunded
+          : totalFunded // ignore: cast_nullable_to_non_nullable
+              as int?,
       isOpen: freezed == isOpen
           ? _value.isOpen
           : isOpen // ignore: cast_nullable_to_non_nullable
@@ -188,6 +209,9 @@ abstract class _$$ProjectItemModelImplCopyWith<$Res>
       String? count,
       String? deadline,
       String? description,
+      int? waitlistCount,
+      int? totalFundedCount,
+      int? totalFunded,
       String? isOpen,
       String? category,
       String? type,
@@ -217,6 +241,9 @@ class __$$ProjectItemModelImplCopyWithImpl<$Res>
     Object? count = freezed,
     Object? deadline = freezed,
     Object? description = freezed,
+    Object? waitlistCount = freezed,
+    Object? totalFundedCount = freezed,
+    Object? totalFunded = freezed,
     Object? isOpen = freezed,
     Object? category = freezed,
     Object? type = freezed,
@@ -271,6 +298,18 @@ class __$$ProjectItemModelImplCopyWithImpl<$Res>
           ? _value.description
           : description // ignore: cast_nullable_to_non_nullable
               as String?,
+      waitlistCount: freezed == waitlistCount
+          ? _value.waitlistCount
+          : waitlistCount // ignore: cast_nullable_to_non_nullable
+              as int?,
+      totalFundedCount: freezed == totalFundedCount
+          ? _value.totalFundedCount
+          : totalFundedCount // ignore: cast_nullable_to_non_nullable
+              as int?,
+      totalFunded: freezed == totalFunded
+          ? _value.totalFunded
+          : totalFunded // ignore: cast_nullable_to_non_nullable
+              as int?,
       isOpen: freezed == isOpen
           ? _value.isOpen
           : isOpen // ignore: cast_nullable_to_non_nullable
@@ -308,6 +347,9 @@ class _$ProjectItemModelImpl implements _ProjectItemModel {
       this.count,
       this.deadline,
       this.description,
+      this.waitlistCount,
+      this.totalFundedCount,
+      this.totalFunded,
       this.isOpen,
       this.category,
       this.type,
@@ -343,6 +385,12 @@ class _$ProjectItemModelImpl implements _ProjectItemModel {
   @override
   final String? description;
   @override
+  final int? waitlistCount;
+  @override
+  final int? totalFundedCount;
+  @override
+  final int? totalFunded;
+  @override
   final String? isOpen;
   @override
   final String? category;
@@ -361,7 +409,7 @@ class _$ProjectItemModelImpl implements _ProjectItemModel {
 
   @override
   String toString() {
-    return 'ProjectItemModel(id: $id, categoryId: $categoryId, projectTypeId: $projectTypeId, projectClass: $projectClass, userId: $userId, title: $title, owner: $owner, price: $price, thumbnail: $thumbnail, count: $count, deadline: $deadline, description: $description, isOpen: $isOpen, category: $category, type: $type, projectImage: $projectImage)';
+    return 'ProjectItemModel(id: $id, categoryId: $categoryId, projectTypeId: $projectTypeId, projectClass: $projectClass, userId: $userId, title: $title, owner: $owner, price: $price, thumbnail: $thumbnail, count: $count, deadline: $deadline, description: $description, waitlistCount: $waitlistCount, totalFundedCount: $totalFundedCount, totalFunded: $totalFunded, isOpen: $isOpen, category: $category, type: $type, projectImage: $projectImage)';
   }
 
   @override
@@ -387,6 +435,12 @@ class _$ProjectItemModelImpl implements _ProjectItemModel {
                 other.deadline == deadline) &&
             (identical(other.description, description) ||
                 other.description == description) &&
+            (identical(other.waitlistCount, waitlistCount) ||
+                other.waitlistCount == waitlistCount) &&
+            (identical(other.totalFundedCount, totalFundedCount) ||
+                other.totalFundedCount == totalFundedCount) &&
+            (identical(other.totalFunded, totalFunded) ||
+                other.totalFunded == totalFunded) &&
             (identical(other.isOpen, isOpen) || other.isOpen == isOpen) &&
             (identical(other.category, category) ||
                 other.category == category) &&
@@ -397,24 +451,28 @@ class _$ProjectItemModelImpl implements _ProjectItemModel {
 
   @JsonKey(ignore: true)
   @override
-  int get hashCode => Object.hash(
-      runtimeType,
-      id,
-      categoryId,
-      projectTypeId,
-      projectClass,
-      userId,
-      title,
-      owner,
-      price,
-      thumbnail,
-      count,
-      deadline,
-      description,
-      isOpen,
-      category,
-      type,
-      const DeepCollectionEquality().hash(_projectImage));
+  int get hashCode => Object.hashAll([
+        runtimeType,
+        id,
+        categoryId,
+        projectTypeId,
+        projectClass,
+        userId,
+        title,
+        owner,
+        price,
+        thumbnail,
+        count,
+        deadline,
+        description,
+        waitlistCount,
+        totalFundedCount,
+        totalFunded,
+        isOpen,
+        category,
+        type,
+        const DeepCollectionEquality().hash(_projectImage)
+      ]);
 
   @JsonKey(ignore: true)
   @override
@@ -445,6 +503,9 @@ abstract class _ProjectItemModel implements ProjectItemModel {
       final String? count,
       final String? deadline,
       final String? description,
+      final int? waitlistCount,
+      final int? totalFundedCount,
+      final int? totalFunded,
       final String? isOpen,
       final String? category,
       final String? type,
@@ -477,6 +538,12 @@ abstract class _ProjectItemModel implements ProjectItemModel {
   String? get deadline;
   @override
   String? get description;
+  @override
+  int? get waitlistCount;
+  @override
+  int? get totalFundedCount;
+  @override
+  int? get totalFunded;
   @override
   String? get isOpen;
   @override
