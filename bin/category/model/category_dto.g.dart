@@ -9,7 +9,7 @@ part of 'category_dto.dart';
 _$CategoryDtoImpl _$$CategoryDtoImplFromJson(Map<String, dynamic> json) =>
     _$CategoryDtoImpl(
       status: json['status'] as String?,
-      totalCount: json['total_count'] as int?,
+      totalCount: (json['total_count'] as num?)?.toInt(),
       projects: (json['projects'] as List<dynamic>?)
               ?.map(
                   (e) => CategoryItemModel.fromJson(e as Map<String, dynamic>))
