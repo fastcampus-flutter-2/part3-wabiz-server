@@ -8,7 +8,7 @@ part of 'project_type.dart';
 
 _$ProjectTypeImpl _$$ProjectTypeImplFromJson(Map<String, dynamic> json) =>
     _$ProjectTypeImpl(
-      id: json['id'] as int?,
+      id: (json['id'] as num?)?.toInt(),
       type: json['type'] as String?,
       created: json['created'] as String?,
     );

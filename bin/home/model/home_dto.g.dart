@@ -9,7 +9,7 @@ part of 'home_dto.dart';
 _$HomeDtoImpl _$$HomeDtoImplFromJson(Map<String, dynamic> json) =>
     _$HomeDtoImpl(
       status: json['status'] as String?,
-      totalCount: json['total_count'] as int?,
+      totalCount: (json['total_count'] as num?)?.toInt(),
       projects: (json['projects'] as List<dynamic>?)
               ?.map((e) => HomeItemModel.fromJson(e as Map<String, dynamic>))
               .toList() ??

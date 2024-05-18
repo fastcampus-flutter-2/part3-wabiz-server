@@ -237,9 +237,9 @@
     },
     {
       "name": "lints",
-      "rootUri": "file:///Users/jaichang/.pub-cache/hosted/pub.dev/lints-3.0.0",
+      "rootUri": "file:///Users/jaichang/.pub-cache/hosted/pub.dev/lints-4.0.0",
       "packageUri": "lib/",
-      "languageVersion": "3.0"
+      "languageVersion": "3.1"
     },
     {
       "name": "logging",
@@ -488,7 +488,7 @@
       "languageVersion": "3.3"
     }
   ],
-  "generated": "2024-05-18T02:26:20.892431Z",
+  "generated": "2024-05-18T02:26:50.888044Z",
   "generator": "pub",
   "generatorVersion": "3.4.0",
   "flutterRoot": "file:///Users/jaichang/development/flutter",
