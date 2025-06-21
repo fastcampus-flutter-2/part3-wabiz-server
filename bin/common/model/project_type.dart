@@ -5,7 +5,7 @@ part 'project_type.freezed.dart';
 part 'project_type.g.dart';
 
 @freezed
-class ProjectType with _$ProjectType {
+abstract class ProjectType with _$ProjectType {
 
   const factory ProjectType({
     int? id,

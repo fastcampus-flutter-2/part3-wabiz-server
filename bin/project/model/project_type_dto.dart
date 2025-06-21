@@ -7,7 +7,7 @@ part 'project_type_dto.freezed.dart';
 part 'project_type_dto.g.dart';
 
 @freezed
-class ProjectTypeDto with _$ProjectTypeDto {
+abstract class ProjectTypeDto with _$ProjectTypeDto {
 
   const factory ProjectTypeDto({
     @Default([]) List<ProjectType> data

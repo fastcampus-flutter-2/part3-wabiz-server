@@ -1,3 +1,4 @@
+// dart format width=80
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
 // ignore_for_file: type=lint
@@ -9,83 +10,53 @@ part of 'response_dto.dart';
 // FreezedGenerator
 // **************************************************************************
 
+// dart format off
 T _$identity<T>(T value) => value;
-
-final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
-
-ResponseDto _$ResponseDtoFromJson(Map<String, dynamic> json) {
-  return _ResponseDto.fromJson(json);
-}
 
 /// @nodoc
 mixin _$ResponseDto {
   @JsonKey(name: "status")
-  String? get status => throw _privateConstructorUsedError;
+  String? get status;
   @JsonKey(name: 'msg')
-  String? get msg => throw _privateConstructorUsedError;
+  String? get msg;
   @JsonKey(name: 'body')
-  String? get body => throw _privateConstructorUsedError;
+  String? get body;
 
-  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
-  $ResponseDtoCopyWith<ResponseDto> get copyWith =>
-      throw _privateConstructorUsedError;
-}
-
-/// @nodoc
-abstract class $ResponseDtoCopyWith<$Res> {
-  factory $ResponseDtoCopyWith(
-          ResponseDto value, $Res Function(ResponseDto) then) =
-      _$ResponseDtoCopyWithImpl<$Res, ResponseDto>;
-  @useResult
-  $Res call(
-      {@JsonKey(name: "status") String? status,
-      @JsonKey(name: 'msg') String? msg,
-      @JsonKey(name: 'body') String? body});
-}
-
-/// @nodoc
-class _$ResponseDtoCopyWithImpl<$Res, $Val extends ResponseDto>
-    implements $ResponseDtoCopyWith<$Res> {
-  _$ResponseDtoCopyWithImpl(this._value, this._then);
-
-  // ignore: unused_field
-  final $Val _value;
-  // ignore: unused_field
-  final $Res Function($Val) _then;
-
+  /// Create a copy of ResponseDto
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @pragma('vm:prefer-inline')
+  $ResponseDtoCopyWith<ResponseDto> get copyWith =>
+      _$ResponseDtoCopyWithImpl<ResponseDto>(this as ResponseDto, _$identity);
+
+  /// Serializes this ResponseDto to a JSON map.
+  Map<String, dynamic> toJson();
+
   @override
-  $Res call({
-    Object? status = freezed,
-    Object? msg = freezed,
-    Object? body = freezed,
-  }) {
-    return _then(_value.copyWith(
-      status: freezed == status
-          ? _value.status
-          : status // ignore: cast_nullable_to_non_nullable
-              as String?,
-      msg: freezed == msg
-          ? _value.msg
-          : msg // ignore: cast_nullable_to_non_nullable
-              as String?,
-      body: freezed == body
-          ? _value.body
-          : body // ignore: cast_nullable_to_non_nullable
-              as String?,
-    ) as $Val);
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is ResponseDto &&
+            (identical(other.status, status) || other.status == status) &&
+            (identical(other.msg, msg) || other.msg == msg) &&
+            (identical(other.body, body) || other.body == body));
+  }
+
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  @override
+  int get hashCode => Object.hash(runtimeType, status, msg, body);
+
+  @override
+  String toString() {
+    return 'ResponseDto(status: $status, msg: $msg, body: $body)';
   }
 }
 
 /// @nodoc
-abstract class _$$ResponseDtoImplCopyWith<$Res>
-    implements $ResponseDtoCopyWith<$Res> {
-  factory _$$ResponseDtoImplCopyWith(
-          _$ResponseDtoImpl value, $Res Function(_$ResponseDtoImpl) then) =
-      __$$ResponseDtoImplCopyWithImpl<$Res>;
-  @override
+abstract mixin class $ResponseDtoCopyWith<$Res> {
+  factory $ResponseDtoCopyWith(
+          ResponseDto value, $Res Function(ResponseDto) _then) =
+      _$ResponseDtoCopyWithImpl;
   @useResult
   $Res call(
       {@JsonKey(name: "status") String? status,
@@ -94,13 +65,14 @@ abstract class _$$ResponseDtoImplCopyWith<$Res>
 }
 
 /// @nodoc
-class __$$ResponseDtoImplCopyWithImpl<$Res>
-    extends _$ResponseDtoCopyWithImpl<$Res, _$ResponseDtoImpl>
-    implements _$$ResponseDtoImplCopyWith<$Res> {
-  __$$ResponseDtoImplCopyWithImpl(
-      _$ResponseDtoImpl _value, $Res Function(_$ResponseDtoImpl) _then)
-      : super(_value, _then);
+class _$ResponseDtoCopyWithImpl<$Res> implements $ResponseDtoCopyWith<$Res> {
+  _$ResponseDtoCopyWithImpl(this._self, this._then);
 
+  final ResponseDto _self;
+  final $Res Function(ResponseDto) _then;
+
+  /// Create a copy of ResponseDto
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -108,17 +80,17 @@ class __$$ResponseDtoImplCopyWithImpl<$Res>
     Object? msg = freezed,
     Object? body = freezed,
   }) {
-    return _then(_$ResponseDtoImpl(
+    return _then(_self.copyWith(
       status: freezed == status
-          ? _value.status
+          ? _self.status
           : status // ignore: cast_nullable_to_non_nullable
               as String?,
       msg: freezed == msg
-          ? _value.msg
+          ? _self.msg
           : msg // ignore: cast_nullable_to_non_nullable
               as String?,
       body: freezed == body
-          ? _value.body
+          ? _self.body
           : body // ignore: cast_nullable_to_non_nullable
               as String?,
     ));
@@ -127,14 +99,13 @@ class __$$ResponseDtoImplCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$ResponseDtoImpl implements _ResponseDto {
-  const _$ResponseDtoImpl(
+class _ResponseDto implements ResponseDto {
+  const _ResponseDto(
       {@JsonKey(name: "status") this.status,
       @JsonKey(name: 'msg') this.msg,
       @JsonKey(name: 'body') this.body});
-
-  factory _$ResponseDtoImpl.fromJson(Map<String, dynamic> json) =>
-      _$$ResponseDtoImplFromJson(json);
+  factory _ResponseDto.fromJson(Map<String, dynamic> json) =>
+      _$ResponseDtoFromJson(json);
 
   @override
   @JsonKey(name: "status")
@@ -146,59 +117,86 @@ class _$ResponseDtoImpl implements _ResponseDto {
   @JsonKey(name: 'body')
   final String? body;
 
+  /// Create a copy of ResponseDto
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  String toString() {
-    return 'ResponseDto(status: $status, msg: $msg, body: $body)';
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  @pragma('vm:prefer-inline')
+  _$ResponseDtoCopyWith<_ResponseDto> get copyWith =>
+      __$ResponseDtoCopyWithImpl<_ResponseDto>(this, _$identity);
+
+  @override
+  Map<String, dynamic> toJson() {
+    return _$ResponseDtoToJson(
+      this,
+    );
   }
 
   @override
   bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$ResponseDtoImpl &&
+            other is _ResponseDto &&
             (identical(other.status, status) || other.status == status) &&
             (identical(other.msg, msg) || other.msg == msg) &&
             (identical(other.body, body) || other.body == body));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(runtimeType, status, msg, body);
 
-  @JsonKey(ignore: true)
   @override
-  @pragma('vm:prefer-inline')
-  _$$ResponseDtoImplCopyWith<_$ResponseDtoImpl> get copyWith =>
-      __$$ResponseDtoImplCopyWithImpl<_$ResponseDtoImpl>(this, _$identity);
-
-  @override
-  Map<String, dynamic> toJson() {
-    return _$$ResponseDtoImplToJson(
-      this,
-    );
+  String toString() {
+    return 'ResponseDto(status: $status, msg: $msg, body: $body)';
   }
 }
 
-abstract class _ResponseDto implements ResponseDto {
-  const factory _ResponseDto(
-      {@JsonKey(name: "status") final String? status,
-      @JsonKey(name: 'msg') final String? msg,
-      @JsonKey(name: 'body') final String? body}) = _$ResponseDtoImpl;
-
-  factory _ResponseDto.fromJson(Map<String, dynamic> json) =
-      _$ResponseDtoImpl.fromJson;
-
+/// @nodoc
+abstract mixin class _$ResponseDtoCopyWith<$Res>
+    implements $ResponseDtoCopyWith<$Res> {
+  factory _$ResponseDtoCopyWith(
+          _ResponseDto value, $Res Function(_ResponseDto) _then) =
+      __$ResponseDtoCopyWithImpl;
   @override
-  @JsonKey(name: "status")
-  String? get status;
-  @override
-  @JsonKey(name: 'msg')
-  String? get msg;
-  @override
-  @JsonKey(name: 'body')
-  String? get body;
-  @override
-  @JsonKey(ignore: true)
-  _$$ResponseDtoImplCopyWith<_$ResponseDtoImpl> get copyWith =>
-      throw _privateConstructorUsedError;
+  @useResult
+  $Res call(
+      {@JsonKey(name: "status") String? status,
+      @JsonKey(name: 'msg') String? msg,
+      @JsonKey(name: 'body') String? body});
 }
+
+/// @nodoc
+class __$ResponseDtoCopyWithImpl<$Res> implements _$ResponseDtoCopyWith<$Res> {
+  __$ResponseDtoCopyWithImpl(this._self, this._then);
+
+  final _ResponseDto _self;
+  final $Res Function(_ResponseDto) _then;
+
+  /// Create a copy of ResponseDto
+  /// with the given fields replaced by the non-null parameter values.
+  @override
+  @pragma('vm:prefer-inline')
+  $Res call({
+    Object? status = freezed,
+    Object? msg = freezed,
+    Object? body = freezed,
+  }) {
+    return _then(_ResponseDto(
+      status: freezed == status
+          ? _self.status
+          : status // ignore: cast_nullable_to_non_nullable
+              as String?,
+      msg: freezed == msg
+          ? _self.msg
+          : msg // ignore: cast_nullable_to_non_nullable
+              as String?,
+      body: freezed == body
+          ? _self.body
+          : body // ignore: cast_nullable_to_non_nullable
+              as String?,
+    ));
+  }
+}
+
+// dart format on

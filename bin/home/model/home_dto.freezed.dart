@@ -1,3 +1,4 @@
+// dart format width=80
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
 // ignore_for_file: type=lint
@@ -9,86 +10,64 @@ part of 'home_dto.dart';
 // FreezedGenerator
 // **************************************************************************
 
+// dart format off
 T _$identity<T>(T value) => value;
-
-final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
-
-HomeDto _$HomeDtoFromJson(Map<String, dynamic> json) {
-  return _HomeDto.fromJson(json);
-}
 
 /// @nodoc
 mixin _$HomeDto {
-  String? get status => throw _privateConstructorUsedError;
-  int? get totalCount => throw _privateConstructorUsedError;
-  List<HomeItemModel>? get projects => throw _privateConstructorUsedError;
+  String? get status;
+  int? get totalCount;
+  List<HomeItemModel>? get projects;
 
-  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
-  $HomeDtoCopyWith<HomeDto> get copyWith => throw _privateConstructorUsedError;
-}
-
-/// @nodoc
-abstract class $HomeDtoCopyWith<$Res> {
-  factory $HomeDtoCopyWith(HomeDto value, $Res Function(HomeDto) then) =
-      _$HomeDtoCopyWithImpl<$Res, HomeDto>;
-  @useResult
-  $Res call({String? status, int? totalCount, List<HomeItemModel>? projects});
-}
-
-/// @nodoc
-class _$HomeDtoCopyWithImpl<$Res, $Val extends HomeDto>
-    implements $HomeDtoCopyWith<$Res> {
-  _$HomeDtoCopyWithImpl(this._value, this._then);
-
-  // ignore: unused_field
-  final $Val _value;
-  // ignore: unused_field
-  final $Res Function($Val) _then;
-
+  /// Create a copy of HomeDto
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @pragma('vm:prefer-inline')
+  $HomeDtoCopyWith<HomeDto> get copyWith =>
+      _$HomeDtoCopyWithImpl<HomeDto>(this as HomeDto, _$identity);
+
+  /// Serializes this HomeDto to a JSON map.
+  Map<String, dynamic> toJson();
+
   @override
-  $Res call({
-    Object? status = freezed,
-    Object? totalCount = freezed,
-    Object? projects = freezed,
-  }) {
-    return _then(_value.copyWith(
-      status: freezed == status
-          ? _value.status
-          : status // ignore: cast_nullable_to_non_nullable
-              as String?,
-      totalCount: freezed == totalCount
-          ? _value.totalCount
-          : totalCount // ignore: cast_nullable_to_non_nullable
-              as int?,
-      projects: freezed == projects
-          ? _value.projects
-          : projects // ignore: cast_nullable_to_non_nullable
-              as List<HomeItemModel>?,
-    ) as $Val);
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is HomeDto &&
+            (identical(other.status, status) || other.status == status) &&
+            (identical(other.totalCount, totalCount) ||
+                other.totalCount == totalCount) &&
+            const DeepCollectionEquality().equals(other.projects, projects));
+  }
+
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  @override
+  int get hashCode => Object.hash(runtimeType, status, totalCount,
+      const DeepCollectionEquality().hash(projects));
+
+  @override
+  String toString() {
+    return 'HomeDto(status: $status, totalCount: $totalCount, projects: $projects)';
   }
 }
 
 /// @nodoc
-abstract class _$$HomeDtoImplCopyWith<$Res> implements $HomeDtoCopyWith<$Res> {
-  factory _$$HomeDtoImplCopyWith(
-          _$HomeDtoImpl value, $Res Function(_$HomeDtoImpl) then) =
-      __$$HomeDtoImplCopyWithImpl<$Res>;
-  @override
+abstract mixin class $HomeDtoCopyWith<$Res> {
+  factory $HomeDtoCopyWith(HomeDto value, $Res Function(HomeDto) _then) =
+      _$HomeDtoCopyWithImpl;
   @useResult
   $Res call({String? status, int? totalCount, List<HomeItemModel>? projects});
 }
 
 /// @nodoc
-class __$$HomeDtoImplCopyWithImpl<$Res>
-    extends _$HomeDtoCopyWithImpl<$Res, _$HomeDtoImpl>
-    implements _$$HomeDtoImplCopyWith<$Res> {
-  __$$HomeDtoImplCopyWithImpl(
-      _$HomeDtoImpl _value, $Res Function(_$HomeDtoImpl) _then)
-      : super(_value, _then);
+class _$HomeDtoCopyWithImpl<$Res> implements $HomeDtoCopyWith<$Res> {
+  _$HomeDtoCopyWithImpl(this._self, this._then);
 
+  final HomeDto _self;
+  final $Res Function(HomeDto) _then;
+
+  /// Create a copy of HomeDto
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -96,17 +75,17 @@ class __$$HomeDtoImplCopyWithImpl<$Res>
     Object? totalCount = freezed,
     Object? projects = freezed,
   }) {
-    return _then(_$HomeDtoImpl(
+    return _then(_self.copyWith(
       status: freezed == status
-          ? _value.status
+          ? _self.status
           : status // ignore: cast_nullable_to_non_nullable
               as String?,
       totalCount: freezed == totalCount
-          ? _value.totalCount
+          ? _self.totalCount
           : totalCount // ignore: cast_nullable_to_non_nullable
               as int?,
       projects: freezed == projects
-          ? _value._projects
+          ? _self.projects
           : projects // ignore: cast_nullable_to_non_nullable
               as List<HomeItemModel>?,
     ));
@@ -116,15 +95,14 @@ class __$$HomeDtoImplCopyWithImpl<$Res>
 /// @nodoc
 
 @JsonSerializable(fieldRename: FieldRename.snake)
-class _$HomeDtoImpl implements _HomeDto {
-  const _$HomeDtoImpl(
+class _HomeDto implements HomeDto {
+  const _HomeDto(
       {this.status,
       this.totalCount,
       final List<HomeItemModel>? projects = const []})
       : _projects = projects;
-
-  factory _$HomeDtoImpl.fromJson(Map<String, dynamic> json) =>
-      _$$HomeDtoImplFromJson(json);
+  factory _HomeDto.fromJson(Map<String, dynamic> json) =>
+      _$HomeDtoFromJson(json);
 
   @override
   final String? status;
@@ -141,57 +119,83 @@ class _$HomeDtoImpl implements _HomeDto {
     return EqualUnmodifiableListView(value);
   }
 
+  /// Create a copy of HomeDto
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  String toString() {
-    return 'HomeDto(status: $status, totalCount: $totalCount, projects: $projects)';
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  @pragma('vm:prefer-inline')
+  _$HomeDtoCopyWith<_HomeDto> get copyWith =>
+      __$HomeDtoCopyWithImpl<_HomeDto>(this, _$identity);
+
+  @override
+  Map<String, dynamic> toJson() {
+    return _$HomeDtoToJson(
+      this,
+    );
   }
 
   @override
   bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$HomeDtoImpl &&
+            other is _HomeDto &&
             (identical(other.status, status) || other.status == status) &&
             (identical(other.totalCount, totalCount) ||
                 other.totalCount == totalCount) &&
             const DeepCollectionEquality().equals(other._projects, _projects));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(runtimeType, status, totalCount,
       const DeepCollectionEquality().hash(_projects));
 
-  @JsonKey(ignore: true)
   @override
-  @pragma('vm:prefer-inline')
-  _$$HomeDtoImplCopyWith<_$HomeDtoImpl> get copyWith =>
-      __$$HomeDtoImplCopyWithImpl<_$HomeDtoImpl>(this, _$identity);
-
-  @override
-  Map<String, dynamic> toJson() {
-    return _$$HomeDtoImplToJson(
-      this,
-    );
+  String toString() {
+    return 'HomeDto(status: $status, totalCount: $totalCount, projects: $projects)';
   }
 }
 
-abstract class _HomeDto implements HomeDto {
-  const factory _HomeDto(
-      {final String? status,
-      final int? totalCount,
-      final List<HomeItemModel>? projects}) = _$HomeDtoImpl;
-
-  factory _HomeDto.fromJson(Map<String, dynamic> json) = _$HomeDtoImpl.fromJson;
-
+/// @nodoc
+abstract mixin class _$HomeDtoCopyWith<$Res> implements $HomeDtoCopyWith<$Res> {
+  factory _$HomeDtoCopyWith(_HomeDto value, $Res Function(_HomeDto) _then) =
+      __$HomeDtoCopyWithImpl;
   @override
-  String? get status;
-  @override
-  int? get totalCount;
-  @override
-  List<HomeItemModel>? get projects;
-  @override
-  @JsonKey(ignore: true)
-  _$$HomeDtoImplCopyWith<_$HomeDtoImpl> get copyWith =>
-      throw _privateConstructorUsedError;
+  @useResult
+  $Res call({String? status, int? totalCount, List<HomeItemModel>? projects});
 }
+
+/// @nodoc
+class __$HomeDtoCopyWithImpl<$Res> implements _$HomeDtoCopyWith<$Res> {
+  __$HomeDtoCopyWithImpl(this._self, this._then);
+
+  final _HomeDto _self;
+  final $Res Function(_HomeDto) _then;
+
+  /// Create a copy of HomeDto
+  /// with the given fields replaced by the non-null parameter values.
+  @override
+  @pragma('vm:prefer-inline')
+  $Res call({
+    Object? status = freezed,
+    Object? totalCount = freezed,
+    Object? projects = freezed,
+  }) {
+    return _then(_HomeDto(
+      status: freezed == status
+          ? _self.status
+          : status // ignore: cast_nullable_to_non_nullable
+              as String?,
+      totalCount: freezed == totalCount
+          ? _self.totalCount
+          : totalCount // ignore: cast_nullable_to_non_nullable
+              as int?,
+      projects: freezed == projects
+          ? _self._projects
+          : projects // ignore: cast_nullable_to_non_nullable
+              as List<HomeItemModel>?,
+    ));
+  }
+}
+
+// dart format on

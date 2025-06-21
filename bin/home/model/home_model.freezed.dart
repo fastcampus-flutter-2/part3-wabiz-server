@@ -1,3 +1,4 @@
+// dart format width=80
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
 // ignore_for_file: type=lint
@@ -9,178 +10,106 @@ part of 'home_model.dart';
 // FreezedGenerator
 // **************************************************************************
 
+// dart format off
 T _$identity<T>(T value) => value;
-
-final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
-
-HomeItemModel _$HomeItemModelFromJson(Map<String, dynamic> json) {
-  return _HomeItemModel.fromJson(json);
-}
 
 /// @nodoc
 mixin _$HomeItemModel {
-  int? get id => throw _privateConstructorUsedError;
-  int? get categoryId => throw _privateConstructorUsedError;
-  int? get projectTypeId => throw _privateConstructorUsedError;
-  String? get userId => throw _privateConstructorUsedError;
-  String? get title => throw _privateConstructorUsedError;
-  String? get owner => throw _privateConstructorUsedError;
-  int? get price => throw _privateConstructorUsedError;
-  String? get thumbnail => throw _privateConstructorUsedError;
-  String? get count => throw _privateConstructorUsedError;
-  String? get deadline => throw _privateConstructorUsedError;
-  String? get description => throw _privateConstructorUsedError;
-  int? get waitlistCount => throw _privateConstructorUsedError;
-  int? get totalFundedCount => throw _privateConstructorUsedError;
-  int? get totalFunded => throw _privateConstructorUsedError;
-  String? get isOpen => throw _privateConstructorUsedError;
-  String? get category => throw _privateConstructorUsedError;
-  String? get type => throw _privateConstructorUsedError;
+  int? get id;
+  int? get categoryId;
+  int? get projectTypeId;
+  String? get userId;
+  String? get title;
+  String? get owner;
+  int? get price;
+  String? get thumbnail;
+  String? get count;
+  String? get deadline;
+  String? get description;
+  int? get waitlistCount;
+  int? get totalFundedCount;
+  int? get totalFunded;
+  String? get isOpen;
+  String? get category;
+  String? get type;
 
-  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
-  $HomeItemModelCopyWith<HomeItemModel> get copyWith =>
-      throw _privateConstructorUsedError;
-}
-
-/// @nodoc
-abstract class $HomeItemModelCopyWith<$Res> {
-  factory $HomeItemModelCopyWith(
-          HomeItemModel value, $Res Function(HomeItemModel) then) =
-      _$HomeItemModelCopyWithImpl<$Res, HomeItemModel>;
-  @useResult
-  $Res call(
-      {int? id,
-      int? categoryId,
-      int? projectTypeId,
-      String? userId,
-      String? title,
-      String? owner,
-      int? price,
-      String? thumbnail,
-      String? count,
-      String? deadline,
-      String? description,
-      int? waitlistCount,
-      int? totalFundedCount,
-      int? totalFunded,
-      String? isOpen,
-      String? category,
-      String? type});
-}
-
-/// @nodoc
-class _$HomeItemModelCopyWithImpl<$Res, $Val extends HomeItemModel>
-    implements $HomeItemModelCopyWith<$Res> {
-  _$HomeItemModelCopyWithImpl(this._value, this._then);
-
-  // ignore: unused_field
-  final $Val _value;
-  // ignore: unused_field
-  final $Res Function($Val) _then;
-
+  /// Create a copy of HomeItemModel
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @pragma('vm:prefer-inline')
+  $HomeItemModelCopyWith<HomeItemModel> get copyWith =>
+      _$HomeItemModelCopyWithImpl<HomeItemModel>(
+          this as HomeItemModel, _$identity);
+
+  /// Serializes this HomeItemModel to a JSON map.
+  Map<String, dynamic> toJson();
+
   @override
-  $Res call({
-    Object? id = freezed,
-    Object? categoryId = freezed,
-    Object? projectTypeId = freezed,
-    Object? userId = freezed,
-    Object? title = freezed,
-    Object? owner = freezed,
-    Object? price = freezed,
-    Object? thumbnail = freezed,
-    Object? count = freezed,
-    Object? deadline = freezed,
-    Object? description = freezed,
-    Object? waitlistCount = freezed,
-    Object? totalFundedCount = freezed,
-    Object? totalFunded = freezed,
-    Object? isOpen = freezed,
-    Object? category = freezed,
-    Object? type = freezed,
-  }) {
-    return _then(_value.copyWith(
-      id: freezed == id
-          ? _value.id
-          : id // ignore: cast_nullable_to_non_nullable
-              as int?,
-      categoryId: freezed == categoryId
-          ? _value.categoryId
-          : categoryId // ignore: cast_nullable_to_non_nullable
-              as int?,
-      projectTypeId: freezed == projectTypeId
-          ? _value.projectTypeId
-          : projectTypeId // ignore: cast_nullable_to_non_nullable
-              as int?,
-      userId: freezed == userId
-          ? _value.userId
-          : userId // ignore: cast_nullable_to_non_nullable
-              as String?,
-      title: freezed == title
-          ? _value.title
-          : title // ignore: cast_nullable_to_non_nullable
-              as String?,
-      owner: freezed == owner
-          ? _value.owner
-          : owner // ignore: cast_nullable_to_non_nullable
-              as String?,
-      price: freezed == price
-          ? _value.price
-          : price // ignore: cast_nullable_to_non_nullable
-              as int?,
-      thumbnail: freezed == thumbnail
-          ? _value.thumbnail
-          : thumbnail // ignore: cast_nullable_to_non_nullable
-              as String?,
-      count: freezed == count
-          ? _value.count
-          : count // ignore: cast_nullable_to_non_nullable
-              as String?,
-      deadline: freezed == deadline
-          ? _value.deadline
-          : deadline // ignore: cast_nullable_to_non_nullable
-              as String?,
-      description: freezed == description
-          ? _value.description
-          : description // ignore: cast_nullable_to_non_nullable
-              as String?,
-      waitlistCount: freezed == waitlistCount
-          ? _value.waitlistCount
-          : waitlistCount // ignore: cast_nullable_to_non_nullable
-              as int?,
-      totalFundedCount: freezed == totalFundedCount
-          ? _value.totalFundedCount
-          : totalFundedCount // ignore: cast_nullable_to_non_nullable
-              as int?,
-      totalFunded: freezed == totalFunded
-          ? _value.totalFunded
-          : totalFunded // ignore: cast_nullable_to_non_nullable
-              as int?,
-      isOpen: freezed == isOpen
-          ? _value.isOpen
-          : isOpen // ignore: cast_nullable_to_non_nullable
-              as String?,
-      category: freezed == category
-          ? _value.category
-          : category // ignore: cast_nullable_to_non_nullable
-              as String?,
-      type: freezed == type
-          ? _value.type
-          : type // ignore: cast_nullable_to_non_nullable
-              as String?,
-    ) as $Val);
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is HomeItemModel &&
+            (identical(other.id, id) || other.id == id) &&
+            (identical(other.categoryId, categoryId) ||
+                other.categoryId == categoryId) &&
+            (identical(other.projectTypeId, projectTypeId) ||
+                other.projectTypeId == projectTypeId) &&
+            (identical(other.userId, userId) || other.userId == userId) &&
+            (identical(other.title, title) || other.title == title) &&
+            (identical(other.owner, owner) || other.owner == owner) &&
+            (identical(other.price, price) || other.price == price) &&
+            (identical(other.thumbnail, thumbnail) ||
+                other.thumbnail == thumbnail) &&
+            (identical(other.count, count) || other.count == count) &&
+            (identical(other.deadline, deadline) ||
+                other.deadline == deadline) &&
+            (identical(other.description, description) ||
+                other.description == description) &&
+            (identical(other.waitlistCount, waitlistCount) ||
+                other.waitlistCount == waitlistCount) &&
+            (identical(other.totalFundedCount, totalFundedCount) ||
+                other.totalFundedCount == totalFundedCount) &&
+            (identical(other.totalFunded, totalFunded) ||
+                other.totalFunded == totalFunded) &&
+            (identical(other.isOpen, isOpen) || other.isOpen == isOpen) &&
+            (identical(other.category, category) ||
+                other.category == category) &&
+            (identical(other.type, type) || other.type == type));
+  }
+
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  @override
+  int get hashCode => Object.hash(
+      runtimeType,
+      id,
+      categoryId,
+      projectTypeId,
+      userId,
+      title,
+      owner,
+      price,
+      thumbnail,
+      count,
+      deadline,
+      description,
+      waitlistCount,
+      totalFundedCount,
+      totalFunded,
+      isOpen,
+      category,
+      type);
+
+  @override
+  String toString() {
+    return 'HomeItemModel(id: $id, categoryId: $categoryId, projectTypeId: $projectTypeId, userId: $userId, title: $title, owner: $owner, price: $price, thumbnail: $thumbnail, count: $count, deadline: $deadline, description: $description, waitlistCount: $waitlistCount, totalFundedCount: $totalFundedCount, totalFunded: $totalFunded, isOpen: $isOpen, category: $category, type: $type)';
   }
 }
 
 /// @nodoc
-abstract class _$$HomeItemModelImplCopyWith<$Res>
-    implements $HomeItemModelCopyWith<$Res> {
-  factory _$$HomeItemModelImplCopyWith(
-          _$HomeItemModelImpl value, $Res Function(_$HomeItemModelImpl) then) =
-      __$$HomeItemModelImplCopyWithImpl<$Res>;
-  @override
+abstract mixin class $HomeItemModelCopyWith<$Res> {
+  factory $HomeItemModelCopyWith(
+          HomeItemModel value, $Res Function(HomeItemModel) _then) =
+      _$HomeItemModelCopyWithImpl;
   @useResult
   $Res call(
       {int? id,
@@ -203,13 +132,15 @@ abstract class _$$HomeItemModelImplCopyWith<$Res>
 }
 
 /// @nodoc
-class __$$HomeItemModelImplCopyWithImpl<$Res>
-    extends _$HomeItemModelCopyWithImpl<$Res, _$HomeItemModelImpl>
-    implements _$$HomeItemModelImplCopyWith<$Res> {
-  __$$HomeItemModelImplCopyWithImpl(
-      _$HomeItemModelImpl _value, $Res Function(_$HomeItemModelImpl) _then)
-      : super(_value, _then);
+class _$HomeItemModelCopyWithImpl<$Res>
+    implements $HomeItemModelCopyWith<$Res> {
+  _$HomeItemModelCopyWithImpl(this._self, this._then);
 
+  final HomeItemModel _self;
+  final $Res Function(HomeItemModel) _then;
+
+  /// Create a copy of HomeItemModel
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -231,73 +162,73 @@ class __$$HomeItemModelImplCopyWithImpl<$Res>
     Object? category = freezed,
     Object? type = freezed,
   }) {
-    return _then(_$HomeItemModelImpl(
+    return _then(_self.copyWith(
       id: freezed == id
-          ? _value.id
+          ? _self.id
           : id // ignore: cast_nullable_to_non_nullable
               as int?,
       categoryId: freezed == categoryId
-          ? _value.categoryId
+          ? _self.categoryId
           : categoryId // ignore: cast_nullable_to_non_nullable
               as int?,
       projectTypeId: freezed == projectTypeId
-          ? _value.projectTypeId
+          ? _self.projectTypeId
           : projectTypeId // ignore: cast_nullable_to_non_nullable
               as int?,
       userId: freezed == userId
-          ? _value.userId
+          ? _self.userId
           : userId // ignore: cast_nullable_to_non_nullable
               as String?,
       title: freezed == title
-          ? _value.title
+          ? _self.title
           : title // ignore: cast_nullable_to_non_nullable
               as String?,
       owner: freezed == owner
-          ? _value.owner
+          ? _self.owner
           : owner // ignore: cast_nullable_to_non_nullable
               as String?,
       price: freezed == price
-          ? _value.price
+          ? _self.price
           : price // ignore: cast_nullable_to_non_nullable
               as int?,
       thumbnail: freezed == thumbnail
-          ? _value.thumbnail
+          ? _self.thumbnail
           : thumbnail // ignore: cast_nullable_to_non_nullable
               as String?,
       count: freezed == count
-          ? _value.count
+          ? _self.count
           : count // ignore: cast_nullable_to_non_nullable
               as String?,
       deadline: freezed == deadline
-          ? _value.deadline
+          ? _self.deadline
           : deadline // ignore: cast_nullable_to_non_nullable
               as String?,
       description: freezed == description
-          ? _value.description
+          ? _self.description
           : description // ignore: cast_nullable_to_non_nullable
               as String?,
       waitlistCount: freezed == waitlistCount
-          ? _value.waitlistCount
+          ? _self.waitlistCount
           : waitlistCount // ignore: cast_nullable_to_non_nullable
               as int?,
       totalFundedCount: freezed == totalFundedCount
-          ? _value.totalFundedCount
+          ? _self.totalFundedCount
           : totalFundedCount // ignore: cast_nullable_to_non_nullable
               as int?,
       totalFunded: freezed == totalFunded
-          ? _value.totalFunded
+          ? _self.totalFunded
           : totalFunded // ignore: cast_nullable_to_non_nullable
               as int?,
       isOpen: freezed == isOpen
-          ? _value.isOpen
+          ? _self.isOpen
           : isOpen // ignore: cast_nullable_to_non_nullable
               as String?,
       category: freezed == category
-          ? _value.category
+          ? _self.category
           : category // ignore: cast_nullable_to_non_nullable
               as String?,
       type: freezed == type
-          ? _value.type
+          ? _self.type
           : type // ignore: cast_nullable_to_non_nullable
               as String?,
     ));
@@ -307,8 +238,8 @@ class __$$HomeItemModelImplCopyWithImpl<$Res>
 /// @nodoc
 
 @JsonSerializable(fieldRename: FieldRename.snake)
-class _$HomeItemModelImpl implements _HomeItemModel {
-  const _$HomeItemModelImpl(
+class _HomeItemModel implements HomeItemModel {
+  const _HomeItemModel(
       {this.id,
       this.categoryId,
       this.projectTypeId,
@@ -326,9 +257,8 @@ class _$HomeItemModelImpl implements _HomeItemModel {
       this.isOpen,
       this.category,
       this.type});
-
-  factory _$HomeItemModelImpl.fromJson(Map<String, dynamic> json) =>
-      _$$HomeItemModelImplFromJson(json);
+  factory _HomeItemModel.fromJson(Map<String, dynamic> json) =>
+      _$HomeItemModelFromJson(json);
 
   @override
   final int? id;
@@ -365,16 +295,26 @@ class _$HomeItemModelImpl implements _HomeItemModel {
   @override
   final String? type;
 
+  /// Create a copy of HomeItemModel
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  String toString() {
-    return 'HomeItemModel(id: $id, categoryId: $categoryId, projectTypeId: $projectTypeId, userId: $userId, title: $title, owner: $owner, price: $price, thumbnail: $thumbnail, count: $count, deadline: $deadline, description: $description, waitlistCount: $waitlistCount, totalFundedCount: $totalFundedCount, totalFunded: $totalFunded, isOpen: $isOpen, category: $category, type: $type)';
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  @pragma('vm:prefer-inline')
+  _$HomeItemModelCopyWith<_HomeItemModel> get copyWith =>
+      __$HomeItemModelCopyWithImpl<_HomeItemModel>(this, _$identity);
+
+  @override
+  Map<String, dynamic> toJson() {
+    return _$HomeItemModelToJson(
+      this,
+    );
   }
 
   @override
   bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$HomeItemModelImpl &&
+            other is _HomeItemModel &&
             (identical(other.id, id) || other.id == id) &&
             (identical(other.categoryId, categoryId) ||
                 other.categoryId == categoryId) &&
@@ -403,7 +343,7 @@ class _$HomeItemModelImpl implements _HomeItemModel {
             (identical(other.type, type) || other.type == type));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -425,79 +365,142 @@ class _$HomeItemModelImpl implements _HomeItemModel {
       category,
       type);
 
-  @JsonKey(ignore: true)
   @override
-  @pragma('vm:prefer-inline')
-  _$$HomeItemModelImplCopyWith<_$HomeItemModelImpl> get copyWith =>
-      __$$HomeItemModelImplCopyWithImpl<_$HomeItemModelImpl>(this, _$identity);
-
-  @override
-  Map<String, dynamic> toJson() {
-    return _$$HomeItemModelImplToJson(
-      this,
-    );
+  String toString() {
+    return 'HomeItemModel(id: $id, categoryId: $categoryId, projectTypeId: $projectTypeId, userId: $userId, title: $title, owner: $owner, price: $price, thumbnail: $thumbnail, count: $count, deadline: $deadline, description: $description, waitlistCount: $waitlistCount, totalFundedCount: $totalFundedCount, totalFunded: $totalFunded, isOpen: $isOpen, category: $category, type: $type)';
   }
 }
 
-abstract class _HomeItemModel implements HomeItemModel {
-  const factory _HomeItemModel(
-      {final int? id,
-      final int? categoryId,
-      final int? projectTypeId,
-      final String? userId,
-      final String? title,
-      final String? owner,
-      final int? price,
-      final String? thumbnail,
-      final String? count,
-      final String? deadline,
-      final String? description,
-      final int? waitlistCount,
-      final int? totalFundedCount,
-      final int? totalFunded,
-      final String? isOpen,
-      final String? category,
-      final String? type}) = _$HomeItemModelImpl;
-
-  factory _HomeItemModel.fromJson(Map<String, dynamic> json) =
-      _$HomeItemModelImpl.fromJson;
-
+/// @nodoc
+abstract mixin class _$HomeItemModelCopyWith<$Res>
+    implements $HomeItemModelCopyWith<$Res> {
+  factory _$HomeItemModelCopyWith(
+          _HomeItemModel value, $Res Function(_HomeItemModel) _then) =
+      __$HomeItemModelCopyWithImpl;
   @override
-  int? get id;
-  @override
-  int? get categoryId;
-  @override
-  int? get projectTypeId;
-  @override
-  String? get userId;
-  @override
-  String? get title;
-  @override
-  String? get owner;
-  @override
-  int? get price;
-  @override
-  String? get thumbnail;
-  @override
-  String? get count;
-  @override
-  String? get deadline;
-  @override
-  String? get description;
-  @override
-  int? get waitlistCount;
-  @override
-  int? get totalFundedCount;
-  @override
-  int? get totalFunded;
-  @override
-  String? get isOpen;
-  @override
-  String? get category;
-  @override
-  String? get type;
-  @override
-  @JsonKey(ignore: true)
-  _$$HomeItemModelImplCopyWith<_$HomeItemModelImpl> get copyWith =>
-      throw _privateConstructorUsedError;
+  @useResult
+  $Res call(
+      {int? id,
+      int? categoryId,
+      int? projectTypeId,
+      String? userId,
+      String? title,
+      String? owner,
+      int? price,
+      String? thumbnail,
+      String? count,
+      String? deadline,
+      String? description,
+      int? waitlistCount,
+      int? totalFundedCount,
+      int? totalFunded,
+      String? isOpen,
+      String? category,
+      String? type});
 }
+
+/// @nodoc
+class __$HomeItemModelCopyWithImpl<$Res>
+    implements _$HomeItemModelCopyWith<$Res> {
+  __$HomeItemModelCopyWithImpl(this._self, this._then);
+
+  final _HomeItemModel _self;
+  final $Res Function(_HomeItemModel) _then;
+
+  /// Create a copy of HomeItemModel
+  /// with the given fields replaced by the non-null parameter values.
+  @override
+  @pragma('vm:prefer-inline')
+  $Res call({
+    Object? id = freezed,
+    Object? categoryId = freezed,
+    Object? projectTypeId = freezed,
+    Object? userId = freezed,
+    Object? title = freezed,
+    Object? owner = freezed,
+    Object? price = freezed,
+    Object? thumbnail = freezed,
+    Object? count = freezed,
+    Object? deadline = freezed,
+    Object? description = freezed,
+    Object? waitlistCount = freezed,
+    Object? totalFundedCount = freezed,
+    Object? totalFunded = freezed,
+    Object? isOpen = freezed,
+    Object? category = freezed,
+    Object? type = freezed,
+  }) {
+    return _then(_HomeItemModel(
+      id: freezed == id
+          ? _self.id
+          : id // ignore: cast_nullable_to_non_nullable
+              as int?,
+      categoryId: freezed == categoryId
+          ? _self.categoryId
+          : categoryId // ignore: cast_nullable_to_non_nullable
+              as int?,
+      projectTypeId: freezed == projectTypeId
+          ? _self.projectTypeId
+          : projectTypeId // ignore: cast_nullable_to_non_nullable
+              as int?,
+      userId: freezed == userId
+          ? _self.userId
+          : userId // ignore: cast_nullable_to_non_nullable
+              as String?,
+      title: freezed == title
+          ? _self.title
+          : title // ignore: cast_nullable_to_non_nullable
+              as String?,
+      owner: freezed == owner
+          ? _self.owner
+          : owner // ignore: cast_nullable_to_non_nullable
+              as String?,
+      price: freezed == price
+          ? _self.price
+          : price // ignore: cast_nullable_to_non_nullable
+              as int?,
+      thumbnail: freezed == thumbnail
+          ? _self.thumbnail
+          : thumbnail // ignore: cast_nullable_to_non_nullable
+              as String?,
+      count: freezed == count
+          ? _self.count
+          : count // ignore: cast_nullable_to_non_nullable
+              as String?,
+      deadline: freezed == deadline
+          ? _self.deadline
+          : deadline // ignore: cast_nullable_to_non_nullable
+              as String?,
+      description: freezed == description
+          ? _self.description
+          : description // ignore: cast_nullable_to_non_nullable
+              as String?,
+      waitlistCount: freezed == waitlistCount
+          ? _self.waitlistCount
+          : waitlistCount // ignore: cast_nullable_to_non_nullable
+              as int?,
+      totalFundedCount: freezed == totalFundedCount
+          ? _self.totalFundedCount
+          : totalFundedCount // ignore: cast_nullable_to_non_nullable
+              as int?,
+      totalFunded: freezed == totalFunded
+          ? _self.totalFunded
+          : totalFunded // ignore: cast_nullable_to_non_nullable
+              as int?,
+      isOpen: freezed == isOpen
+          ? _self.isOpen
+          : isOpen // ignore: cast_nullable_to_non_nullable
+              as String?,
+      category: freezed == category
+          ? _self.category
+          : category // ignore: cast_nullable_to_non_nullable
+              as String?,
+      type: freezed == type
+          ? _self.type
+          : type // ignore: cast_nullable_to_non_nullable
+              as String?,
+    ));
+  }
+}
+
+// dart format on

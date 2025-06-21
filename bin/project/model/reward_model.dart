@@ -9,7 +9,7 @@ part 'reward_model.freezed.dart';
 part 'reward_model.g.dart';
 
 @freezed
-class RewardItemModel with _$RewardItemModel {
+abstract class RewardItemModel with _$RewardItemModel {
   @JsonSerializable(fieldRename: FieldRename.snake)
   const factory RewardItemModel({
     int? id,

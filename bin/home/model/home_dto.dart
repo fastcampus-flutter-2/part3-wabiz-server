@@ -7,7 +7,7 @@ part 'home_dto.freezed.dart';
 part 'home_dto.g.dart';
 
 @freezed
-class HomeDto with _$HomeDto {
+abstract class HomeDto with _$HomeDto {
   @JsonSerializable(fieldRename: FieldRename.snake)
   const factory HomeDto({
     String? status,

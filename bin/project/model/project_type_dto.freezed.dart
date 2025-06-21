@@ -1,3 +1,4 @@
+// dart format width=80
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
 // ignore_for_file: type=lint
@@ -9,85 +10,70 @@ part of 'project_type_dto.dart';
 // FreezedGenerator
 // **************************************************************************
 
+// dart format off
 T _$identity<T>(T value) => value;
-
-final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
-
-ProjectTypeDto _$ProjectTypeDtoFromJson(Map<String, dynamic> json) {
-  return _ProjectTypeDto.fromJson(json);
-}
 
 /// @nodoc
 mixin _$ProjectTypeDto {
-  List<ProjectType> get data => throw _privateConstructorUsedError;
+  List<ProjectType> get data;
 
-  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
-  $ProjectTypeDtoCopyWith<ProjectTypeDto> get copyWith =>
-      throw _privateConstructorUsedError;
-}
-
-/// @nodoc
-abstract class $ProjectTypeDtoCopyWith<$Res> {
-  factory $ProjectTypeDtoCopyWith(
-          ProjectTypeDto value, $Res Function(ProjectTypeDto) then) =
-      _$ProjectTypeDtoCopyWithImpl<$Res, ProjectTypeDto>;
-  @useResult
-  $Res call({List<ProjectType> data});
-}
-
-/// @nodoc
-class _$ProjectTypeDtoCopyWithImpl<$Res, $Val extends ProjectTypeDto>
-    implements $ProjectTypeDtoCopyWith<$Res> {
-  _$ProjectTypeDtoCopyWithImpl(this._value, this._then);
-
-  // ignore: unused_field
-  final $Val _value;
-  // ignore: unused_field
-  final $Res Function($Val) _then;
-
+  /// Create a copy of ProjectTypeDto
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @pragma('vm:prefer-inline')
+  $ProjectTypeDtoCopyWith<ProjectTypeDto> get copyWith =>
+      _$ProjectTypeDtoCopyWithImpl<ProjectTypeDto>(
+          this as ProjectTypeDto, _$identity);
+
+  /// Serializes this ProjectTypeDto to a JSON map.
+  Map<String, dynamic> toJson();
+
   @override
-  $Res call({
-    Object? data = null,
-  }) {
-    return _then(_value.copyWith(
-      data: null == data
-          ? _value.data
-          : data // ignore: cast_nullable_to_non_nullable
-              as List<ProjectType>,
-    ) as $Val);
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is ProjectTypeDto &&
+            const DeepCollectionEquality().equals(other.data, data));
+  }
+
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  @override
+  int get hashCode =>
+      Object.hash(runtimeType, const DeepCollectionEquality().hash(data));
+
+  @override
+  String toString() {
+    return 'ProjectTypeDto(data: $data)';
   }
 }
 
 /// @nodoc
-abstract class _$$ProjectTypeDtoImplCopyWith<$Res>
-    implements $ProjectTypeDtoCopyWith<$Res> {
-  factory _$$ProjectTypeDtoImplCopyWith(_$ProjectTypeDtoImpl value,
-          $Res Function(_$ProjectTypeDtoImpl) then) =
-      __$$ProjectTypeDtoImplCopyWithImpl<$Res>;
-  @override
+abstract mixin class $ProjectTypeDtoCopyWith<$Res> {
+  factory $ProjectTypeDtoCopyWith(
+          ProjectTypeDto value, $Res Function(ProjectTypeDto) _then) =
+      _$ProjectTypeDtoCopyWithImpl;
   @useResult
   $Res call({List<ProjectType> data});
 }
 
 /// @nodoc
-class __$$ProjectTypeDtoImplCopyWithImpl<$Res>
-    extends _$ProjectTypeDtoCopyWithImpl<$Res, _$ProjectTypeDtoImpl>
-    implements _$$ProjectTypeDtoImplCopyWith<$Res> {
-  __$$ProjectTypeDtoImplCopyWithImpl(
-      _$ProjectTypeDtoImpl _value, $Res Function(_$ProjectTypeDtoImpl) _then)
-      : super(_value, _then);
+class _$ProjectTypeDtoCopyWithImpl<$Res>
+    implements $ProjectTypeDtoCopyWith<$Res> {
+  _$ProjectTypeDtoCopyWithImpl(this._self, this._then);
 
+  final ProjectTypeDto _self;
+  final $Res Function(ProjectTypeDto) _then;
+
+  /// Create a copy of ProjectTypeDto
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? data = null,
   }) {
-    return _then(_$ProjectTypeDtoImpl(
+    return _then(_self.copyWith(
       data: null == data
-          ? _value._data
+          ? _self.data
           : data // ignore: cast_nullable_to_non_nullable
               as List<ProjectType>,
     ));
@@ -96,12 +82,11 @@ class __$$ProjectTypeDtoImplCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$ProjectTypeDtoImpl implements _ProjectTypeDto {
-  const _$ProjectTypeDtoImpl({final List<ProjectType> data = const []})
+class _ProjectTypeDto implements ProjectTypeDto {
+  const _ProjectTypeDto({final List<ProjectType> data = const []})
       : _data = data;
-
-  factory _$ProjectTypeDtoImpl.fromJson(Map<String, dynamic> json) =>
-      _$$ProjectTypeDtoImplFromJson(json);
+  factory _ProjectTypeDto.fromJson(Map<String, dynamic> json) =>
+      _$ProjectTypeDtoFromJson(json);
 
   final List<ProjectType> _data;
   @override
@@ -112,50 +97,73 @@ class _$ProjectTypeDtoImpl implements _ProjectTypeDto {
     return EqualUnmodifiableListView(_data);
   }
 
+  /// Create a copy of ProjectTypeDto
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  String toString() {
-    return 'ProjectTypeDto(data: $data)';
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  @pragma('vm:prefer-inline')
+  _$ProjectTypeDtoCopyWith<_ProjectTypeDto> get copyWith =>
+      __$ProjectTypeDtoCopyWithImpl<_ProjectTypeDto>(this, _$identity);
+
+  @override
+  Map<String, dynamic> toJson() {
+    return _$ProjectTypeDtoToJson(
+      this,
+    );
   }
 
   @override
   bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$ProjectTypeDtoImpl &&
+            other is _ProjectTypeDto &&
             const DeepCollectionEquality().equals(other._data, _data));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode =>
       Object.hash(runtimeType, const DeepCollectionEquality().hash(_data));
 
-  @JsonKey(ignore: true)
   @override
-  @pragma('vm:prefer-inline')
-  _$$ProjectTypeDtoImplCopyWith<_$ProjectTypeDtoImpl> get copyWith =>
-      __$$ProjectTypeDtoImplCopyWithImpl<_$ProjectTypeDtoImpl>(
-          this, _$identity);
-
-  @override
-  Map<String, dynamic> toJson() {
-    return _$$ProjectTypeDtoImplToJson(
-      this,
-    );
+  String toString() {
+    return 'ProjectTypeDto(data: $data)';
   }
 }
 
-abstract class _ProjectTypeDto implements ProjectTypeDto {
-  const factory _ProjectTypeDto({final List<ProjectType> data}) =
-      _$ProjectTypeDtoImpl;
-
-  factory _ProjectTypeDto.fromJson(Map<String, dynamic> json) =
-      _$ProjectTypeDtoImpl.fromJson;
-
+/// @nodoc
+abstract mixin class _$ProjectTypeDtoCopyWith<$Res>
+    implements $ProjectTypeDtoCopyWith<$Res> {
+  factory _$ProjectTypeDtoCopyWith(
+          _ProjectTypeDto value, $Res Function(_ProjectTypeDto) _then) =
+      __$ProjectTypeDtoCopyWithImpl;
   @override
-  List<ProjectType> get data;
-  @override
-  @JsonKey(ignore: true)
-  _$$ProjectTypeDtoImplCopyWith<_$ProjectTypeDtoImpl> get copyWith =>
-      throw _privateConstructorUsedError;
+  @useResult
+  $Res call({List<ProjectType> data});
 }
+
+/// @nodoc
+class __$ProjectTypeDtoCopyWithImpl<$Res>
+    implements _$ProjectTypeDtoCopyWith<$Res> {
+  __$ProjectTypeDtoCopyWithImpl(this._self, this._then);
+
+  final _ProjectTypeDto _self;
+  final $Res Function(_ProjectTypeDto) _then;
+
+  /// Create a copy of ProjectTypeDto
+  /// with the given fields replaced by the non-null parameter values.
+  @override
+  @pragma('vm:prefer-inline')
+  $Res call({
+    Object? data = null,
+  }) {
+    return _then(_ProjectTypeDto(
+      data: null == data
+          ? _self._data
+          : data // ignore: cast_nullable_to_non_nullable
+              as List<ProjectType>,
+    ));
+  }
+}
+
+// dart format on

@@ -9,7 +9,7 @@ part 'project_model.freezed.dart';
 part 'project_model.g.dart';
 
 @freezed
-class ProjectItemModel with _$ProjectItemModel {
+abstract class ProjectItemModel with _$ProjectItemModel {
   @JsonSerializable(fieldRename: FieldRename.snake)
   const factory ProjectItemModel({
     int? id,

@@ -6,16 +6,15 @@ part of 'project_type_dto.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$ProjectTypeDtoImpl _$$ProjectTypeDtoImplFromJson(Map<String, dynamic> json) =>
-    _$ProjectTypeDtoImpl(
+_ProjectTypeDto _$ProjectTypeDtoFromJson(Map<String, dynamic> json) =>
+    _ProjectTypeDto(
       data: (json['data'] as List<dynamic>?)
               ?.map((e) => ProjectType.fromJson(e as Map<String, dynamic>))
               .toList() ??
           const [],
     );
 
-Map<String, dynamic> _$$ProjectTypeDtoImplToJson(
-        _$ProjectTypeDtoImpl instance) =>
+Map<String, dynamic> _$ProjectTypeDtoToJson(_ProjectTypeDto instance) =>
     <String, dynamic>{
       'data': instance.data,
     };

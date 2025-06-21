@@ -6,8 +6,7 @@ part of 'home_dto.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$HomeDtoImpl _$$HomeDtoImplFromJson(Map<String, dynamic> json) =>
-    _$HomeDtoImpl(
+_HomeDto _$HomeDtoFromJson(Map<String, dynamic> json) => _HomeDto(
       status: json['status'] as String?,
       totalCount: (json['total_count'] as num?)?.toInt(),
       projects: (json['projects'] as List<dynamic>?)
@@ -16,8 +15,7 @@ _$HomeDtoImpl _$$HomeDtoImplFromJson(Map<String, dynamic> json) =>
           const [],
     );
 
-Map<String, dynamic> _$$HomeDtoImplToJson(_$HomeDtoImpl instance) =>
-    <String, dynamic>{
+Map<String, dynamic> _$HomeDtoToJson(_HomeDto instance) => <String, dynamic>{
       'status': instance.status,
       'total_count': instance.totalCount,
       'projects': instance.projects,
